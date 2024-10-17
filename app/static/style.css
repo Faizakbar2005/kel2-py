@@ -1,0 +1,133 @@
+html, body {
+    height: 100%; /* Mengatur tinggi HTML dan body menjadi 100% */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column; /* Mengatur arah flex menjadi kolom */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    flex: 1; /* Mengizinkan main untuk mengambil ruang yang tersisa */
+    padding: 20px;
+    text-align: center;
+}
+
+.welcome {
+    font-size: 48px; /* Ukuran font lebih besar untuk Selamat Datang */
+    color: #0f100f; /* Warna hijau */
+    margin-bottom: 15px; /* Jarak bawah */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3), 0 0 25px rgba(45, 73, 185, 0.5); /* Bayangan teks yang lebih dramatis */
+    font-weight: bold; /* Membuat teks lebih tebal */
+    letter-spacing: 1px; /* Jarak antar huruf */
+    animation: fadeIn 1.5s ease-in-out; /* Animasi saat muncul */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); /* Mengangkat teks dari bawah */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.member-list {
+    list-style-type: none; /* Menghilangkan bullet */
+    padding: 0;
+    font-size: 18px; /* Ukuran font untuk nama anggota */
+    margin: 20px 0; /* Margin atas dan bawah */
+}
+
+.member-list li {
+    background-color: #fff; /* Warna latar belakang item */
+    border: 1px solid #ddd; /* Garis batas */
+    border-radius: 5px; /* Sudut melengkung */
+    padding: 10px; /* Padding di dalam item */
+    margin: 5px 0; /* Margin antar item */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%; /* Pastikan footer lebar 100% */
+}
+
+.nav-button {
+    display: inline-block; /* Mengatur tampilan menjadi block untuk padding */
+    background-color: #4287cb; /* Warna latar belakang tombol */
+    color: #fff; /* Warna teks tombol */
+    padding: 10px 20px; /* Padding di dalam tombol */
+    border-radius: 5px; /* Sudut melengkung */
+    text-decoration: none; /* Menghilangkan garis bawah pada link */
+    transition: background-color 0.3s, transform 0.3s; /* Transisi saat hover */
+}
+
+.nav-button:hover {
+    background-color: #1c63aa; /* Warna latar belakang saat hover */
+    transform: translateY(-2px); /* Efek angkat saat hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan saat hover */
+}
+
+
+.about-section {
+    background-color: #f0f8ff; /* Warna latar belakang cerah */
+    padding: 20px; /* Padding di dalam section */
+    margin: 20px auto; /* Margin atas dan bawah */
+    border-radius: 10px; /* Sudut melengkung */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+    max-width: 800px; /* Lebar maksimum */
+    text-align: center; /* Teks di tengah */
+}
+
+.about-title {
+    font-size: 28px; /* Ukuran font untuk judul */
+    color: #4CAF50; /* Warna hijau cerah */
+    margin-bottom: 15px; /* Jarak bawah untuk judul */
+    font-weight: bold; /* Membuat teks judul lebih tebal */
+    border-bottom: 3px solid #2196F3; /* Garis bawah judul */
+    padding-bottom: 10px; /* Jarak bawah judul */
+    text-transform: uppercase; /* Membuat teks menjadi huruf kapital */
+}
+
+.about-section p {
+    font-size: 18px; /* Ukuran font untuk paragraf */
+    color: #333; /* Warna teks */
+    line-height: 1.6; /* Jarak antar baris */
+    margin: 10px 0; /* Margin atas dan bawah untuk paragraf */
+    transition: color 0.3s ease; /* Transisi halus saat hover */
+}
+
+.about-section p:hover {
+    color: #2196F3; /* Warna teks berubah saat hover */
+}
